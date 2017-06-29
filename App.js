@@ -1,12 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import Palpiteiro from './components/Palpiteiro';
+import Palpiteiros from './components/Palpiteiros';
 
 export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Palpiteiro />
+        <Palpiteiros />
       </View>
     );
   }
@@ -15,8 +15,10 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    flexDirection: 'column',
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    alignItems: 'flex-start',
+    justifyContent: 'flex-start',
+    marginTop: 30,
   },
 });
