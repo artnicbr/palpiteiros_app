@@ -19,7 +19,6 @@ export default class Palpiteiros extends React.Component {
             return true;
         })
         .catch((error) => {
-            console.log(error);
             this.setState({error : error.message});
             return error;
         });
