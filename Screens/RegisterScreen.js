@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, TextInput, Image, View, Button } from 'react-native';
-import {sha256} from 'react-native-sha256';
 import Estilos from '../Styles/Form.js';
+import { sha256 } from 'react-native-sha256';
 
 export default class RegisterScreen extends React.Component {
   static navigationOptions = {
@@ -21,8 +21,7 @@ export default class RegisterScreen extends React.Component {
 
   registerUser(){    
     var configs = require("../config.json");
-    sha256(this.state.senha).then((hash) => { console.log(has) })
-    .catch((error) => {console.log(error)});
+    sha256(this.state.senha).then((hash) => console.log(hash)).catch((error) => console.log(error));
     /*if(this.state.email.match(/^[^@]*@[^\.]*\..+$/gi) != null){
       sha256(this.state.senha).then((hash) => {
 
